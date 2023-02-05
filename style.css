@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster+Two:ital@1&display=swap');
+
+*,::before,::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+.container{
+    width:100%;
+    height:100vh;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-evenly;
+    
+}
+
+.container video{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+h1{
+    /* position:relative; */
+    z-index:3;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster Two', cursive;
+    color:white;
+    text-align:center;
+    /* padding-top:5%; */
+    font-size:clamp(50px,10vw,160px)
+}
+
+
+.container p{
+   /* position:relative; */
+   z-index: 3;
+   padding-top: 2%;
+/*     
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster Two', cursive; */
+    color:white;
+    width:50%;
+   
+   /* font-size:25px; */
+   font-size:clamp(16px,2vw,25px)
+}
+
+button{
+    z-index: 3;
+    color:white;
+    background:transparent;
+    border:2ps solid black;
+    padding:20px 20px;
+    border-radius:15px;
+    cursor: pointer;
+    transition:background-color 0.5s;
+    
+    
+}
+
+button:hover{
+    background-color:#003e00;
+}
+
+@media screen and (max-width:1263px){
+    .container p{
+        width:80%;
+    }
+}
